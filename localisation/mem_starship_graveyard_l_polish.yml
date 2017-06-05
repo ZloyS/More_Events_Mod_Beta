@@ -8,7 +8,7 @@
  #mem_starship_graveyard.101.title:0 "An Interesting Find"
  mem_starship_graveyard.101.title:0 "Interesujące Odkrycie"
  #mem_starship_graveyard.101.desc:0 "Our research post at [mem_graveyard_planet.GetName] investigating the starship graveyard reports an unusual find among the wrecks: an almost-intact warship with a number of interesting features. They are requesting a science ship to assist with investigating the wreck."
- mem_starship_graveyard.101.desc:0 "Nasz punkt badawczy nad [mem_graveyard_planet.GetName] badający cmętarz okretów kosmicznych donosi o nietypowym znalezisku pośrów wraków: praktycznie nietknięty okręt wojenny z wieloma interesującymi cechami. Proszą o wysłanie okrętu badawczego w celu asystowania przy dalszym badaniu tego okrętu."
+ mem_starship_graveyard.101.desc:0 "Nasz punkt badawczy nad [mem_graveyard_planet.GetName] badający cmętarz okrętów kosmicznych donosi o nietypowym znalezisku pośród wraków: praktycznie nietknięty okręt wojenny posiadający wiele nietypowych cech. Proszą o wysłanie okrętu badawczego w celu zbadania tego okrętu."
  #mem_starship_graveyard.101.a:0 "Send a ship at once!"
  mem_starship_graveyard.101.a:0 "Natychmiast wysłać okręt!"
  #mem_starship_graveyard.101.b:0 "Our ships are all occupied at present."
