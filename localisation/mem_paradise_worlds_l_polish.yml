@@ -1,0 +1,11 @@
+﻿l_polish:
+ #################################################
+ # Text by Malthus                               #
+ #################################################
+ # Paradise Worlds
+
+ # modifier
+ #mem_paradise_world:0 "Paradise World"
+ mem_paradise_world:0 "Rajski Świat"
+ #mem_paradise_world_desc:0 "This world can only be described as a paradise. Its environment has a very positive effect on morale and productivity. Even hard physical labor feels less tiresome here."
+ mem_paradise_world_desc:0 "Świat ten opisany może być jedynie jako raj. Jego środowisko ma bardzo pozytywny wpływ na morale i produktywność. Nawet ciężka praca fizyczna wydaje się tutaj mniej męcząca."
