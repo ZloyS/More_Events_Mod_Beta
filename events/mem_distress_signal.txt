@@ -718,7 +718,7 @@ ship_event = {
 	}		
 }
 
-# Stranded - Survivor is a Star
+# Stranded - Survivor's video leak
 ship_event = {
 	id = mem_distress_signal.110
 	title = "mem_distress_signal.110.name"
@@ -731,7 +731,12 @@ ship_event = {
 	
 	option = {
 		name = mem_distress_signal.110.continue
-		hidden_effect = { ship_event = { id = mem_distress_signal.111 days = 60 random = 10 } } 		
+		hidden_effect = { 
+			random_list = {
+				50 = { ship_event = { id = mem_distress_signal.111 days = 60 random = 10 } } 		
+				50 = {} 		
+			}
+		}
 	}
 	option = {
 		name = mem_distress_signal.110.cease		
@@ -747,11 +752,31 @@ ship_event = {
 	}
 }
 
-# Stranded - Survivor for Governor
+# Stranded - Survivor is a star
 ship_event = {
 	id = mem_distress_signal.111
 	title = "mem_distress_signal.111.name"
 	desc = "mem_distress_signal.111.desc"
+	picture =  GFX_evt_news_room 
+	show_sound = event_sensor_ping
+	location = FROM
+
+	is_triggered_only = yes
+	
+	option = {
+		name = mem_distress_signal.111.integrate
+		hidden_effect = { ship_event = { id = mem_distress_signal.112 days = 60 random = 10 } }
+	}
+	option = {
+		name = mem_distress_signal.111.noway		
+	}
+}
+
+# Stranded - Survivor for Governor
+ship_event = {
+	id = mem_distress_signal.112
+	title = "mem_distress_signal.112.name"
+	desc = "mem_distress_signal.112.desc"
 	picture =  GFX_evt_news_room 
 	show_sound = event_sensor_ping
 	location = FROM
@@ -762,8 +787,8 @@ ship_event = {
 		trigger = {
 			Root.Owner = { free_leader_slots > 0 }
 		}
-		name = mem_distress_signal.111.accept
-		custom_tooltip = mem_distress_signal.101.tooltip	
+		name = mem_distress_signal.112.accept
+		custom_tooltip = mem_distress_signal.112.tooltip	
 		hidden_effect = {
 			create_species = {
 				name = random
@@ -795,13 +820,13 @@ ship_event = {
 		trigger = {
 			Root.Owner = { free_leader_slots = 0 }
 		}
-		name = mem_distress_signal.111.accept.full
+		name = mem_distress_signal.112.accept.full
 		Root.Owner = { add_influence = @mem_stranded_influence_gain3
 		}
 	}
 
 	option = {
-		name = mem_distress_signal.111.deny		
+		name = mem_distress_signal.112.deny		
 	}
 }
 
