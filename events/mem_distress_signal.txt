@@ -821,12 +821,12 @@ ship_event = {
 			Root.Owner = { free_leader_slots = 0 }
 		}
 		name = mem_distress_signal.112.accept.full
-		Root.Owner = { add_influence = @mem_stranded_influence_gain3
-		}
+		Root.Owner = { add_influence = @mem_stranded_influence_gain3 }
 	}
 
 	option = {
 		name = mem_distress_signal.112.deny		
+		Root.Owner = { add_modifier = mem_distress_signal_stranted_survivor_media_censorship_failure days = 90 }
 	}
 }
 

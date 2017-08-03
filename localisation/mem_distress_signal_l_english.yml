@@ -10,7 +10,7 @@
  mem_distress_signal.1.a:0 "Too bad."
 
  ### STRANDED ### 
- # Stranded - Initial event
+ # Initial event
  mem_distress_signal.100.name:0 "Stranded"
  mem_distress_signal.100.desc:0 "Our away team found a crashlanded ship on the planet's surface. As the wreckage was already partially overgrown by the local flora our team was smitten with suprise when suddenly a single survivor greeted them.\n\nThe survivor identifies himself as Bheer Gry'Ills, former captain of the now derelict ship. They where send on a scientific mission to explore formerly unknown worlds and stellar mysteries. Their mission progressed well until they found a strange gravitational anomaly in an asteroid belt. According to the survivor it must have been some kind of unstable wormhole that pulled their ship out of normal space. When they regained consciousness their ship was disabled and adrift, slowly entering the atmosphere of a planet they had never seen before. They are not even sure to still be in the same galaxy as there are no known reference points to be found. Without any company aside from his loyal ai assistant he still managed to live off this alien world for more than two years.\n\nWith little hope to ever return home again the survivor offers his service as a scientific officer in return for accommodation."
  mem_distress_signal.100.common.welcome:0 "Welcome aboard!"
@@ -61,7 +61,7 @@
  
  # Survivor is a star
  mem_distress_signal.111.name:0 "Xeno Survivor is a Star"
- mem_distress_signal.111.desc:0 ""
+ mem_distress_signal.111.desc:0 "XENO SURVIVOR IS A STAR"
  mem_distress_signal.111.integrate:0 "Offer him citizenship"
  mem_distress_signal.111.noway:0 "Not a Xeno. Never."
  
@@ -72,9 +72,15 @@
  mem_distress_signal.112.accept:0 "SURVIVOR FOR GOVERNOR ACCEPT"
  mem_distress_signal.112.accept.full:0 "SURVIVOR FOR GOVERNOR NO EMPTY SLOT"
  mem_distress_signal.112.deny:0 "SURVIVOR FOR GOVERNOR DENY"
+ 
+ # Media Censorship - Success
+ mem_distress_signal.120.name:0 "Media Censorship - Success"
+ mem_distress_signal.120.desc:0 "Our control of all the media and news network has been a success. With subtle bits of information spread at the right time and place, we have been able to turn the opinion in our favor and what started to become a hero story about a Xeno has now become an even more intense [sentiment d'appartenance à la seule espèce qui mérite qu'on s'y intéresse, la notre.]"
+ mem_distress_signal.120.integrate:0 "Offer him citizenship"
+ mem_distress_signal.120.noway:0 "Not a Xeno. Never."
 
  ### ROCK THRASHERS ###
- # Rock Thrashers - Initial event
+ # Initial event
  mem_distress_signal.200.name:0 "Strange Power Source"
  mem_distress_signal.200.desc:0 "According to [Root.GetLeaderName], the beacon is located deep underground and is constantly on the move. This is highly unusual and requires a closer look."
  mem_distress_signal.200.a:0 "Make it happen."
@@ -84,20 +90,20 @@
  MEM_DISTRESS_SIGNAL_ROCK_THRASHERS_DISCOVERY_PROJECT:0 "Follow the signal"
  MEM_DISTRESS_SIGNAL_ROCK_THRASHERS_DISCOVERY_PROJECT_DESC:0 "We are picking a distress beacon signal that is moving under the planet's surface. We need to chase it down and determine what is moving it."
  
- # Rock Thrashers - Special Project success
+ # Special Project success
  mem_distress_signal.201.name:0 "Rock Thrashers"
  mem_distress_signal.201.desc:0 "Deep scans revealed a tunnel network spanning incredible distances around the site. While navigating the tunnels, the science team eventually located remains of a gigantic beast. Living underground, it travels considerable distances by eating its way through rocks and soil and occasionally resurface to hunt and absorb solar light for sustenance. It appears it has swallowed a small commercial ship that landed on the planet but its digestive system was maladapted to diet of refined metal and space-age plastic, causing it to get stuck in creature's body and eventually causing death by bowel obstruction."
  mem_distress_signal.201.a.neutral:0 "We should keep this in mind."
  mem_distress_signal.201.a.xenophile:0 "A magnificent beast."
  mem_distress_signal.201.a.xenophobe:0 "Horrifying!"
  
- # Rock Thrashers - Reminder that Special Project is available if planet is colonized first
+ # Reminder that Special Project is available if planet is colonized first
  mem_distress_signal.211.name:0 "Strange Power Source - Reminder"
  mem_distress_signal.211.desc:0 "Our scientists want to remind us that a project is available on the recently colonized planet [This.GetName]. They would like to know what your plan are regarding this strange power source that had been identified during the first scans."
  mem_distress_signal.211.a:0 "Thanks for the reminder. Study it."
  mem_distress_signal.211.b:0 "Don't bother with this anymore."
  
- # Rock Thrashers - If initial project has been COMPLETED, Rock Thrashers causing damage randomly
+ # If initial project has been COMPLETED, Rock Thrashers causing damage randomly
  mem_distress_signal.220.name:0 "Rock Thrashers Causing Damage to Colony"
  mem_distress_signal.220.desc:0 "Hearthquacke, blabla, Rock Thrashers..."
  mem_distress_signal.220.a:0 "It could have been worse."
