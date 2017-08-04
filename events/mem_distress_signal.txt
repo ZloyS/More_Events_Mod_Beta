@@ -765,11 +765,20 @@ ship_event = {
 	
 	option = {
 		name = mem_distress_signal.111.integrate
-		hidden_effect = { ship_event = { id = mem_distress_signal.112 days = 60 random = 10 } }
+		hidden_effect = {
+			random_list = {
+				40 = { ship_event = { id = mem_distress_signal.112 days = 60 random = 10 } }
+				60 = { ship_event = { id = mem_distress_signal.113 days = 60 random = 10 } }
+			}
+		}		
 	}
 	option = {
-		name = mem_distress_signal.111.noway		
+		name = mem_distress_signal.111.noway	
+		# TODO : Ajouter le modifier ici
 	}
+	
+	# TODO : Check les textes de cet event
+	# TODO : Ajouter une troisième option ? Tuer le Xeno. Si découvert, unrest en masse
 }
 
 # Stranded - Survivor for Governor
@@ -872,7 +881,7 @@ ship_event = {
 }
 
 #Todo : Modifier pour faire le gouverneur en deux étapes. Laissez le temps aux vidéo de se répandre : possibilité de tout stopper (Unrest et Unhappiness) ou de laisser continuer.
-#		Si continuer, proposer l'intégration du survivant dans l'empire. Plus tard, il devient une start et peut devenir gouverneur ou crever de la drogue.
+#		Si continuer, proposer l'intégration du survivant dans l'empire. Plus tard, il devient une star et peut devenir gouverneur ou crever de la drogue.
 
 #################################
 ## ROCK THRASHERS

@@ -61,7 +61,7 @@
  
  # Survivor is a star
  mem_distress_signal.111.name:0 "Xeno Survivor is a Star"
- mem_distress_signal.111.desc:0 "XENO SURVIVOR IS A STAR"
+ mem_distress_signal.111.desc:0 "Maybe we should have stopped the propagation of all these videos. This Xeno is now considered like a star and there's even a TV Show about him that's been quite popular lately amongst the population. His popularity is now so high that many people consider him like what we could call... A Star. Some of them are even asking for his integration in our empire.\n\nThis is something that we should consider wisely as whatever the decision we take, we need to take it now and assume the consequences."
  mem_distress_signal.111.integrate:0 "Offer him citizenship"
  mem_distress_signal.111.noway:0 "Not a Xeno. Never."
  
@@ -73,11 +73,24 @@
  mem_distress_signal.112.accept.full:0 "SURVIVOR FOR GOVERNOR NO EMPTY SLOT"
  mem_distress_signal.112.deny:0 "SURVIVOR FOR GOVERNOR DENY"
  
+ # Survivor is dead from drugs
+ mem_distress_signal.113.name:0 "Xeno Survivor for Governor"
+ mem_distress_signal.113.desc:0 "GOVERNOR DESCRIPTION"
+ mem_distress_signal.113.tooltip:0 "A new Governor is added to the §YLeader§! pool."
+ mem_distress_signal.113.accept:0 "SURVIVOR FOR GOVERNOR ACCEPT"
+ mem_distress_signal.113.accept.full:0 "SURVIVOR FOR GOVERNOR NO EMPTY SLOT"
+ mem_distress_signal.113.deny:0 "SURVIVOR FOR GOVERNOR DENY"
+ 
  # Media Censorship - Success
  mem_distress_signal.120.name:0 "Media Censorship - Success"
- mem_distress_signal.120.desc:0 "Our control of all the media and news network has been a success. With subtle bits of information spread at the right time and place, we have been able to turn the opinion in our favor and what started to become a hero story about a Xeno has now become an even more intense [sentiment d'appartenance à la seule espèce qui mérite qu'on s'y intéresse, la notre.]"
- mem_distress_signal.120.integrate:0 "Offer him citizenship"
- mem_distress_signal.120.noway:0 "Not a Xeno. Never."
+ mem_distress_signal.120.desc:0 "Our hidden intervention in all major news and media networks has been a success. With subtle bits of information spread at the right time and place, we have been able to turn the public opinion in our government's favor and what started out as a xeno hero story has now further cemented our people's moral certainty of racial superiority."
+ mem_distress_signal.120.a:0 "This is a good thing."
+ 
+ # Media Censorship - Failure
+ mem_distress_signal.121.name:0 "Media Censorship - Failure"
+ mem_distress_signal.121.desc:0 "Our control of all the media and news networks has been a success. With subtle bits of information spread at the right time and place, we have been able to turn the opinion in our favor and what started to become a hero story about a Xeno has now become an even more intense [sentiment d'appartenance à la seule espèce qui mérite qu'on s'y intéresse, la notre.]"
+ mem_distress_signal.121.integrate:0 "Offer him citizenship"
+ mem_distress_signal.121.noway:0 "Not a Xeno. Never."
 
  ### ROCK THRASHERS ###
  # Initial event
