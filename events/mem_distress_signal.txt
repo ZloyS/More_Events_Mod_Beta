@@ -777,6 +777,11 @@ ship_event = {
 		# TODO : Ajouter le modifier ici
 	}
 	
+	option = {
+		name = mem_distress_signal.111.kill
+		# TODO : Ajouter le modifier ici
+	}
+	
 	# TODO : Check les textes de cet event
 	# TODO : Ajouter une troisième option ? Tuer le Xeno. Si découvert, unrest en masse
 }
