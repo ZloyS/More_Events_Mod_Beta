@@ -74,17 +74,9 @@
  mem_distress_signal.112.accept.full:0 "SURVIVOR FOR GOVERNOR NO EMPTY SLOT"
  mem_distress_signal.112.deny:0 "SURVIVOR FOR GOVERNOR DENY"
  
- # Survivor has been killed - Discovered
- mem_distress_signal.112.name:0 ""
- mem_distress_signal.112.desc:0 ""
- mem_distress_signal.112.tooltip:0 ""
- mem_distress_signal.112.accept:0 ""
- mem_distress_signal.112.accept.full:0 ""
- mem_distress_signal.112.deny:0 ""
- 
  # Survivor is dead from drugs
  mem_distress_signal.113.name:0 "Dead from substance abuse"
- mem_distress_signal.113.desc:0 "The Survivor Star, now a citizen of our great [EMPIRE]... "
+ mem_distress_signal.113.desc:0 "The Survivor Star, now a citizen of [Owner.GetName] "
  mem_distress_signal.113.a:0 "After all we did for him. They are all the same."
  
  # Media Censorship - Success
@@ -97,6 +89,11 @@
  mem_distress_signal.121.desc:0 "Our control of all the media and news networks has been a success. With subtle bits of information spread at the right time and place, we have been able to turn the opinion in our favor and what started to become a hero story about a Xeno has now become an even more intense [sentiment d'appartenance à la seule espèce qui mérite qu'on s'y intéresse, la notre.]"
  mem_distress_signal.121.integrate:0 "Offer him citizenship"
  mem_distress_signal.121.noway:0 "Not a Xeno. Never."
+ 
+ # Survivor has been killed - Discovered
+ mem_distress_signal.130.name:0 "Assassination discovered"
+ mem_distress_signal.130.desc:0 ""
+ mem_distress_signal.130.a:0 "They will forget him anyway."
 
  ### ROCK THRASHERS ###
  # Initial event

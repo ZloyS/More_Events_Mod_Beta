@@ -774,12 +774,17 @@ ship_event = {
 	}
 	option = {
 		name = mem_distress_signal.111.noway	
-		# TODO : Ajouter le modifier ici
+		Root.Owner = { add_modifier = mem_distress_signal_stranted_survivor_integration_rejected days = 60 }
 	}
 	
 	option = {
 		name = mem_distress_signal.111.kill
-		# TODO : Ajouter le modifier ici
+		hidden_effect = {
+			random_list = {
+				30 = { ship_event = { id = mem_distress_signal.130 days = 60 random = 10 } }
+				70 = {  }
+			}
+		}
 	}
 	
 	# TODO : Check les textes de cet event
