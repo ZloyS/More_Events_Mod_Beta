@@ -94,6 +94,12 @@
  mem_distress_signal.130.name:0 "Assassination discovered"
  mem_distress_signal.130.desc:0 ""
  mem_distress_signal.130.a:0 "They will forget him anyway."
+ 
+ # Planet Modifier
+ mem_distress_signal_stranted_survivor_media_censorship_failure:0 "Media Censorship Failure"
+ mem_distress_signal_stranted_survivor_media_censorship_failure_desc:0 "Our attemp at censoring media and news network has been accompanied by a wave of discontentment."
+ mem_distress_signal_stranted_survivor_integration_rejected:0 "Xeno Survivor Integration Rejected"
+ mem_distress_signal_stranted_survivor_integration_rejected_desc:0 "Our rejection of the Xeno Survivor integration has caused a wave of massive discontentment."
 
  ### ROCK THRASHERS ###
  # Initial event

@@ -890,6 +890,23 @@ ship_event = {
 	}
 }
 
+# Stranded - Survivor has been killed - Discovered
+ship_event = {
+	id = mem_distress_signal.130
+	title = "mem_distress_signal.130.name"
+	desc = "mem_distress_signal.130.desc"
+	picture =  GFX_evt_news_room 
+	show_sound = event_sensor_ping
+	location = FROM
+
+	is_triggered_only = yes		
+	
+	option = {
+		name = mem_distress_signal.130.a
+		#TODO : Unrest
+	}
+}
+
 #Todo : Modifier pour faire le gouverneur en deux étapes. Laissez le temps aux vidéo de se répandre : possibilité de tout stopper (Unrest et Unhappiness) ou de laisser continuer.
 #		Si continuer, proposer l'intégration du survivant dans l'empire. Plus tard, il devient une star et peut devenir gouverneur ou crever de la drogue.
 
