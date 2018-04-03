@@ -58,9 +58,18 @@ planet_event = {
 	trigger = {
 		num_pops > 6
 		NOT = { has_planet_flag = colony_event }
+		NOT = { is_planet_class = pc_habitat }
+		is_ringworld = no
 		has_owner = yes
-		owner = { NOT = { has_country_flag = mem_tales_of_yore_started } }
+		owner = {
+			NOR = {
+				has_country_flag = mem_tales_of_yore_started
+				has_ethic = ethic_gestalt_consciousness
+			}
+			is_ai = no
+		}
 		is_capital = no
+		NOT = { is_planet_class = pc_habitat }
 	}
 	
 	immediate = {
@@ -83,7 +92,7 @@ planet_event = {
 	id = mem_tales_of_yore.2
 	title = "mem_tales_of_yore.2.name"
 	desc = "mem_tales_of_yore.2.desc"
-	picture = GFX_evt_alien_ruins
+	picture = GFX_evt_mem_mountain_ruin
 	
 	is_triggered_only = yes
 	

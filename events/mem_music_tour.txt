@@ -7,16 +7,19 @@ country_event = {
 	hide_window = yes
 	
 	trigger = {
+		NOT = {
+			has_ethic = ethic_gestalt_consciousness
+		}
 		any_neighbor_country = {
-		OR = {
-			has_ethic = ethic_individualist
-			has_ethic = ethic_fanatic_individualist
+			OR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
 			}
 			NOT = {
-			has_country_flag = mem_sent_rockstar_to_player    #countries stop sending rockstars once they've sent one to a player
-				}
+				has_country_flag = mem_sent_rockstar_to_player    #countries stop sending rockstars once they've sent one to a player
 			}
 		}
+	}
 
 	
 	mean_time_to_happen = {
@@ -26,8 +29,8 @@ country_event = {
 		random_neighbor_country = {
 			limit = {
 				OR = {
-					has_ethic = ethic_individualist
-					has_ethic = ethic_fanatic_individualist
+					has_ethic = ethic_egalitarian
+					has_ethic = ethic_fanatic_egalitarian
 					}
 				NOT = { 
 				has_country_flag = mem_sent_rockstar_to_player 
@@ -99,7 +102,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophile"
-						pop_has_ethic = "ethic_fanatic_xenophile"
 						}
 					}
 				add_modifier = {
@@ -111,7 +113,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
 						}
 					}
 				add_modifier = {
@@ -141,7 +142,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophile"
-						pop_has_ethic = "ethic_fanatic_xenophile"
 						}
 					}
 				add_modifier = {
@@ -153,7 +153,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
 						}
 					}
 				add_modifier = {
@@ -167,8 +166,8 @@ country_event = {
 		name = "mem_music_tour.8.individualist"
 		trigger = {
 			OR = {
-				has_ethic = ethic_individualist
-				has_ethic = ethic_fanatic_individualist
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
 			}
 		}
 		event_target:mem_tour_location = {
@@ -176,7 +175,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophile"
-						pop_has_ethic = "ethic_fanatic_xenophile"
 						}
 					}
 				add_modifier = {
@@ -188,7 +186,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
 						}
 					}
 				add_modifier = {
@@ -209,8 +206,8 @@ country_event = {
 		name = "mem_music_tour.8.lodsofemone"
 		trigger = {
 			OR = {
-				has_ethic = ethic_individualist
-				has_ethic = ethic_fanatic_individualist
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
 			}
 			OR = {
 				has_ethic = ethic_materialist
@@ -222,7 +219,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophile"
-						pop_has_ethic = "ethic_fanatic_xenophile"
 						}
 					}
 				add_modifier ={
@@ -234,7 +230,6 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
 						}
 					}
 				add_modifier ={
@@ -272,9 +267,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_spiritualist"
-						pop_has_ethic = "ethic_fanatic_spiritualist"
-						}
 					}
+				}
 				add_modifier ={
 					modifier = mem_foreign_rockstar_filth_banned
 					days = 720
@@ -284,9 +278,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophile"
-						pop_has_ethic = "ethic_fanatic_xenophile"
-						}
 					}
+				}
 				add_modifier = {
 					modifier = mem_foreign_star_denied_entry_unhappy
 					days = 720
@@ -296,9 +289,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
-						}
 					}
+				}
 				add_modifier = {
 					modifier = mem_foreign_star_denied_entry_happy
 					days = 720
@@ -310,18 +302,17 @@ country_event = {
 		name = "mem_music_tour.8.collectivist"
 		trigger = {
 			OR = {
-				has_ethic = ethic_collectivist
-				has_ethic = ethic_fanatic_collectivist
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 		event_target:mem_tour_location = {
 			every_owned_pop = {
 				limit = { 
 					OR = {
-						pop_has_ethic = "ethic_collectivist"
-						pop_has_ethic = "ethic_fanatic_spiritualist"
-						}
+						pop_has_ethic = "ethic_authoritarian"
 					}
+				}
 				add_modifier = {
 					modifier = mem_less_play_more_work
 					days = 720
@@ -331,9 +322,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophile"
-						pop_has_ethic = "ethic_fanatic_xenophile"
-						}
 					}
+				}
 				add_modifier = {
 					modifier = mem_foreign_star_denied_entry_unhappy
 					days = 720
@@ -343,9 +333,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
-						}
 					}
+				}
 				add_modifier = {
 					modifier = mem_foreign_star_denied_entry_happy
 					days = 720
@@ -358,8 +347,8 @@ country_event = {
 		custom_tooltip = mem_music_tour.8.freeforall.tooltip
 		trigger = {
 			OR = {
-				has_ethic = ethic_collectivist
-				has_ethic = ethic_fanatic_collectivist
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 			OR = {
 				has_ethic = ethic_xenophile
@@ -371,9 +360,8 @@ country_event = {
 					limit = { 
 						OR = {
 							pop_has_ethic = "ethic_xenophile"
-							pop_has_ethic = "ethic_fanatic_xenophile"
-							}
 						}
+					}
 					add_modifier ={
 						modifier = mem_foreign_star_on_tour_happy
 						days = 720
@@ -383,9 +371,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
-						}
 					}
+				}
 				add_modifier ={
 					modifier = mem_foreign_star_on_tour_unhappy
 					days = 720
@@ -413,9 +400,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_pacifist"
-						pop_has_ethic = "ethic_fanatic_pacifist"
-						}
 					}
+				}
 				add_modifier ={
 					modifier = mem_foreign_rockstar_peace_love
 					days = 720
@@ -425,9 +411,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophile"
-						pop_has_ethic = "ethic_fanatic_xenophile"
-						}
 					}
+				}
 				add_modifier = {
 					modifier = mem_foreign_star_on_tour_happy
 					days = 720
@@ -437,9 +422,8 @@ country_event = {
 				limit = { 
 					OR = {
 						pop_has_ethic = "ethic_xenophobe"
-						pop_has_ethic = "ethic_fanatic_xenophobe"
-						}
 					}
+				}
 				add_modifier = {
 					modifier = mem_foreign_star_on_tour_unhappy
 					days = 720

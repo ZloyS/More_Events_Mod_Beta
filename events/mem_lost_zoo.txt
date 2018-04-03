@@ -56,8 +56,17 @@ ship_event = {
 	is_triggered_only = yes
 
 	immediate = { 
-		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
-		from = { orbital_deposit_tile = { clear_deposits = yes } }
+		hidden_effect = {
+			owner = { 
+				country_event = { id = story.5 days = 30 } 
+				set_country_flag = mem_lost_zoo
+			}
+		}
+		from = { 
+			orbital_deposit_tile = { 
+				clear_deposits = yes 
+			}
+		}
 	}
 	
 	option = {
@@ -79,6 +88,12 @@ ship_event = {
 	picture = GFX_evt_in_the_dark
 	location = FROM
 	is_triggered_only = yes
+	
+	immediate = {
+		fleet = {
+			set_event_locked = yes
+		}
+	}
 	
 	option = {	#Reverse-engineer
 		name = mem_lost_zoo.1.a
@@ -106,12 +121,30 @@ ship_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			fleet = {
+				set_event_locked = no
+			}
+		}
 	}
 	option = {	#Dissection
 		name = mem_lost_zoo.1.b
+		trigger = {
+			owner = {
+				NOT = {
+					has_ethic = "ethic_fanatic_xenophile"
+				}
+			}
+		}
 		FROMFROMFROM = {
 			orbital_deposit_tile = {
-				add_deposit = d_enormous1_society_deposit
+				add_deposit = d_immense_society_deposit
+				add_deposit = d_rich_engineering_deposit
+			}
+		}
+		hidden_effect = {
+			fleet = {
+				set_event_locked = no
 			}
 		}
 	}
@@ -119,12 +152,20 @@ ship_event = {
 		name = mem_lost_zoo.1.c
 		trigger = {
 			owner = {
-				has_technology = tech_alien_life_studies
+				OR = {
+					has_ethic = "ethic_xenophile"
+					has_ethic = "ethic_fanatic_xenophile"
+				}
 			}
 		}
 		FROMFROMFROM = {
 			orbital_deposit_tile = {
-				add_deposit = d_alien_pets_deposit
+				add_deposit = d_enormous1_society_deposit
+			}
+		}
+		hidden_effect = {
+			fleet = {
+				set_event_locked = no
 			}
 		}
 	}

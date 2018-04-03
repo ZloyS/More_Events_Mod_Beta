@@ -9,9 +9,34 @@ anomaly = {
 	weight = 1
 	
 	potential = {
+		NOT = {
+			has_global_flag = mem_ea_uplifter_quest_started
+		}
 		owner = {
 			is_ai = no
+			NOR = {
+				has_authority = auth_hive_mind
+				has_authority = auth_machine_intelligence
+			}
 		}
+	}
+}
+
+anomaly = {
+	event = mem_extinct_abductors.2
+	category = "mem_extinct_abductors_category"
+	
+	weight = 1
+	
+	potential = {
+		OR = {
+			owner = {
+				is_ai = no
+				has_authority = auth_hive_mind
+			}
+			has_global_flag = mem_ea_uplifter_quest_started
+		}
+		
 	}
 }
 

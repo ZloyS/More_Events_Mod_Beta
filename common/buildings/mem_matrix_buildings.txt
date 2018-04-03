@@ -7,7 +7,8 @@
 mem_matrix_building = {
 	is_listed = no
 	
-	cost = {
+	allow = {
+		always = no
 	}
 
 	required_resources = { # fully self-sufficient
@@ -20,9 +21,54 @@ mem_matrix_building = {
 	}
 	
 	adjacency_bonus = {
-		resource_society_research_add = 2
-		resource_physics_research_add = 2
-		resource_engineering_research_add = 2
+		tile_building_resource_society_research_add = 2
+		tile_building_resource_physics_research_add = 2
+		tile_building_resource_engineering_research_add = 2
+	}
+	
+	ai_replace = no
+	event_building = yes
+}
+
+mem_matrix_building_replace = {
+	icon = "mem_matrix_building"
+	base_buildtime = 360
+	empire_unique = yes
+	
+	cost = {
+	}
+
+	allow = {
+		planet = {
+			has_planet_flag = mem_matrix_building
+			NOT = {
+				has_building = mem_matrix_building
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			has_planet_flag = mem_matrix_building
+			NOT = {
+				has_building = mem_matrix_building
+			}
+		}	
+	}
+	
+	required_resources = { # fully self-sufficient
+	}
+	
+	produced_resources = {
+		engineering_research = 3
+		society_research = 3
+		physics_research = 3
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_society_research_add = 2
+		tile_building_resource_physics_research_add = 2
+		tile_building_resource_engineering_research_add = 2
 	}
 	
 	upgrades = {
